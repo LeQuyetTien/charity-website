@@ -658,3 +658,9 @@
         width: 100%;
     }
 }
+
+/* Add CSS to style your map container */
+#map {
+    height: 500px;
+    width: 100%;
+}
