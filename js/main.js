@@ -29,21 +29,22 @@
 
 
     // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
+    // $(document).ready(function () {
 
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
+        // var $videoSrc;
+        // $('.btn-play').click(function () {
+        //     $videoSrc = $(this).data("src");
+        // });
+        // console.log($videoSrc);
 
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
+        // $('#videoModal').on('shown.bs.modal', function (e) {
+        //     $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        // })
+
+        // $('#videoModal').on('hide.bs.modal', function (e) {
+        //     $("#video").attr('src', $videoSrc);
+        // })
+    // });
     
     
     // Back to top button
@@ -133,21 +134,21 @@
     });
 
     // Gallery Filter
-    var Container = $('.container');
-    Container.imagesLoaded(function () {
-        var portfolio = $('.gallery-menu');
-        portfolio.on('click', 'button', function () {
-            $(this).addClass('active').siblings().removeClass('active');
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-        var $grid = $('.gallery-list').isotope({
-            itemSelector: '.gallery-grid'
-        });
+    // var Container = $('.container');
+    // Container.imagesLoaded(function () {
+    //     var portfolio = $('.gallery-menu');
+    //     portfolio.on('click', 'button', function () {
+    //         $(this).addClass('active').siblings().removeClass('active');
+    //         var filterValue = $(this).attr('data-filter');
+    //         $grid.isotope({
+    //             filter: filterValue
+    //         });
+    //     });
+    //     var $grid = $('.gallery-list').isotope({
+    //         itemSelector: '.gallery-grid'
+    //     });
 
-    });
+    // });
 
 
     /* Fancybox
@@ -159,6 +160,7 @@
 		width: '70%',
 		height: '70%',
 	});
+    
     
 })(jQuery);
 
