@@ -32,6 +32,12 @@
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
 		media="screen">
+
+	<style>
+		.card-header {
+			cursor: pointer;
+		}
+	</style>
 </head>
 
 <body>
@@ -52,7 +58,8 @@
 				<a href="chuong-trinh.html" class="nav-item nav-link">Chương trình</a>
 				<a href="qua-tang.html" class="nav-item nav-link">Quà</a>
 				<a href="quy-trinh.html" class="nav-item nav-link">Quy trình</a>
-				<a href="tin-tuc.html" class="nav-item nav-link" style="margin-right: 20px;">Tin Tức<img src="img/new-icon-gif.gif" style="width: 48px;height: 48px;position: absolute;top: 0px;"></a>
+				<a href="tin-tuc.html" class="nav-item nav-link" style="margin-right: 20px;">Tin Tức<img
+						src="img/new-icon-gif.gif" style="width: 48px;height: 48px;position: absolute;top: 0px;"></a>
 				<a href="school-list.html" class="nav-item nav-link">Danh sách</a>
 				<a href="maps.html" class="nav-item nav-link">Địa chỉ</a>
 				<a href="contact.html" class="nav-item nav-link">Liên hệ</a>
@@ -72,16 +79,17 @@
 				<div class="row">
 					<div id="accordion">
 						<div class="card">
-							<div class="card-header" id="headingOne">
+							<div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">
 								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-										aria-controls="collapseOne">
+									<button class="btn btn-link">
 										Liên lạc
 									</button>
 								</h5>
 							</div>
 
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+								data-parent="#accordion">
 								<div class="card-body">
 
 									<div class="service-item bg-light d-flex p-4">
@@ -89,26 +97,40 @@
 											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;">
 										</div>
 										<div style="padding-left: 12px; padding-top: 5px">
-											<p>Ban giám hiệu, giáo viên chủ nhiệm liên lạc với nhóm qua Zalo, email, hay điện thoại.
+											<p>Ban giám hiệu, giáo viên chủ nhiệm liên lạc với nhóm qua Zalo, email, hay
+												điện thoại.
 												Sau đó tải Danh sách Học sinh (mẫu Excel đính kèm) để tham khảo.
-												Ban giám hiệu, giáo viên chủ nhiệm liên lạc với nhóm qua Zalo, email, hay điện thoại.
+												Ban giám hiệu, giáo viên chủ nhiệm liên lạc với nhóm qua Zalo, email,
+												hay điện thoại.
 												Sau đó tải Danh sách Học sinh (mẫu Excel đính kèm) để tham khảo.
-												Ban giám hiệu, giáo viên chủ nhiệm liên lạc với nhóm qua Zalo, email, hay điện thoại.
+												Ban giám hiệu, giáo viên chủ nhiệm liên lạc với nhóm qua Zalo, email,
+												hay điện thoại.
 												Sau đó tải Danh sách Học sinh (mẫu Excel đính kèm) để tham khảo.
 											</p>
-											<a class="text-uppercase font-weight-bold" href="danh-sach (1).xlsx">Mẫu Excel</a>
+											<a class="text-uppercase font-weight-bold" href="danh-sach (1).xlsx">Mẫu
+												Excel</a>
 										</div>
 									</div>
 
 									<div class="service-item bg-light d-flex p-4">
-									<!-- <div class="row"> -->
+										<!-- <div class="row"> -->
 										<div class="col-lg-7 pt-4 pt-lg-0">
-											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;" class="float-end imgshadow" alt="">
+											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;"
+												class="float-end imgshadow" alt="">
 											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+												veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+												commodo consequat. Duis aute irure dolor
+												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+												pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+												qui officia deserunt mollit anim id est laborum.
+												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+												pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+												qui officia deserunt mollit anim id est laborum.
+												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+												pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+												qui officia deserunt mollit anim id est laborum.
 											</p>
 										</div>
 										<div style="text-align: left;" class="col-lg-5">
@@ -120,22 +142,24 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" id="headingTwo">
+							<div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+								aria-expanded="false" aria-controls="collapseTwo">
 								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-										aria-expanded="false" aria-controls="collapseTwo">
+									<button class="btn btn-link collapsed">
 										Chuẩn bị
 									</button>
 								</h5>
 							</div>
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+								data-parent="#accordion">
 								<div class="card-body">
 									<div class="service-item bg-light d-flex p-4">
 										<div>
 											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;">
 										</div>
 										<div style="padding-left: 12px; padding-top: 5px">
-											<p>Giáo viên chủ nhiệm chuẩn bị thông tin (tuổi, giới tính, số đo) của tất cả HS lớp/khối nhận quà
+											<p>Giáo viên chủ nhiệm chuẩn bị thông tin (tuổi, giới tính, số đo) của tất
+												cả HS lớp/khối nhận quà
 												đồng phục và 5 HS
 												nhận quà xe đạp. Điền vào mẫu Danh sách và gởi về nhóm.
 											</p>
@@ -145,15 +169,16 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header" id="headingThree">
+							<div class="card-header" id="headingThree" data-toggle="collapse"
+								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-										aria-expanded="false" aria-controls="collapseThree">
+									<button class="btn btn-link collapsed">
 										Khảo sát
 									</button>
 								</h5>
 							</div>
-							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+								data-parent="#accordion">
 								<div class="card-body">
 
 									<div class="service-item bg-light d-flex p-4">
@@ -162,35 +187,41 @@
 										</div>
 										<div style="padding-left: 12px; padding-top: 5px">
 											<p>
-												Nhóm sẽ tổ chức một chuyến đi tham quan trường để khảo sát và thu thập thêm thông tin. Trong
+												Nhóm sẽ tổ chức một chuyến đi tham quan trường để khảo sát và thu thập
+												thêm thông tin. Trong
 												buổi khảo sát, nhóm và
-												Ban Giám hiệu sẽ trao đổi và điều chỉnh hình thức, số lượng và ngày phát quà, v.v.
+												Ban Giám hiệu sẽ trao đổi và điều chỉnh hình thức, số lượng và ngày phát
+												quà, v.v.
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header" id="headingFour">
+								<div class="card-header" id="headingFour" data-toggle="collapse"
+									data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 									<h5 class="mb-0">
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-											aria-expanded="false" aria-controls="collapseFour">
+										<button class="btn btn-link collapsed">
 											Trao quà
 										</button>
 									</h5>
 								</div>
-								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+									data-parent="#accordion">
 									<div class="card-body">
 
 										<div class="service-item bg-light d-flex p-4">
 											<div>
-												<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;">
+												<img src="img/dong-phuc-the-thao.jpg"
+													style="width: 100px; height: 100px;">
 											</div>
 											<div style="padding-left: 12px; padding-top: 5px">
 												<p>
-													Sau khi chuẩn bị, đến ngày phát nhóm sẽ đến trường trao quà tận tay từng HS. Mỗi phần quà đồng
+													Sau khi chuẩn bị, đến ngày phát nhóm sẽ đến trường trao quà tận tay
+													từng HS. Mỗi phần quà đồng
 													phục (áo, quần) sẽ có
-													logo trường và kích cỡ phù hợp với từng HS. Phần quà xe đạp sẽ có kích thước (lớn, nhỏ) và màu
+													logo trường và kích cỡ phù hợp với từng HS. Phần quà xe đạp sẽ có
+													kích thước (lớn, nhỏ) và màu
 													sắc (xanh, hồng) theo
 													giới tính.
 												</p>
@@ -202,24 +233,27 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header" id="headingFour">
+								<div class="card-header" id="headingFive" data-toggle="collapse"
+									data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 									<h5 class="mb-0">
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-											aria-expanded="false" aria-controls="collapseFive">
+										<button class="btn btn-link collapsed">
 											Điều chỉnh
 										</button>
 									</h5>
 								</div>
-								<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+								<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+									data-parent="#accordion">
 									<div class="card-body">
 
 										<div class="service-item bg-light d-flex p-4">
 											<div>
-												<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;">
+												<img src="img/dong-phuc-the-thao.jpg"
+													style="width: 100px; height: 100px;">
 											</div>
 											<div style="padding-left: 12px; padding-top: 5px">
 												<p>
-													Sau ngày phát quà, nếu kích cỡ đồng phục không phù hợp, Ban Giám hiệu có thể liên lạc nhóm để
+													Sau ngày phát quà, nếu kích cỡ đồng phục không phù hợp, Ban Giám
+													hiệu có thể liên lạc nhóm để
 													hoán đổi cho HS.
 												</p>
 											</div>
