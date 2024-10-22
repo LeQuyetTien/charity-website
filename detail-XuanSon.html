@@ -35,8 +35,8 @@
 
   <script>
     const locations = [{
-      "lat": 12.671323946144577,
-      "lng": 109.150588852878,
+      "lat": 12.67096526791289,
+      "lng": 109.15011220452539,
       "width": 36,
       "height": 36,
       "icon": "img/map-school.png",
@@ -50,15 +50,15 @@
     function initMap() {
       // Create a new map instance
       const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
+        zoom: 17,
         center: {
           lat: locations[0].lat,
           lng: locations[0].lng,
         },
       });
 
-      // Create a bounds object to fit all markers
-      const bounds = new google.maps.LatLngBounds();
+      // // Create a bounds object to fit all markers
+      // const bounds = new google.maps.LatLngBounds();
 
       // Function to add markers to the map
       function addMarkers(locations) {
@@ -95,41 +95,41 @@
             infoWindow.open(map, marker);
           });
 
-          // Extend the bounds to include each marker's position
-          bounds.extend(new google.maps.LatLng(location.lat, location.lng));
+          // // Extend the bounds to include each marker's position
+          // bounds.extend(new google.maps.LatLng(location.lat, location.lng));
         });
       }
 
       // Add markers for each location except the user's location
       addMarkers(locations);
 
-      // Adjust the map to fit all markers within the bounds
-      map.fitBounds(bounds);
+      // // Adjust the map to fit all markers within the bounds
+      // map.fitBounds(bounds);
 
-      if (navigator.geolocation) {
-        // Get user's current location and add it to the map
-        navigator.geolocation.getCurrentPosition((position) => {
-          const userLocation = {
-            name: "Vị trí của bạn",
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-            icon: "img/map-location.gif",
-            width: 36,
-            height: 56,
-          };
+      // if (navigator.geolocation) {
+      //   // Get user's current location and add it to the map
+      //   navigator.geolocation.getCurrentPosition((position) => {
+      //     const userLocation = {
+      //       name: "Vị trí của bạn",
+      //       lat: position.coords.latitude,
+      //       lng: position.coords.longitude,
+      //       icon: "img/map-location.gif",
+      //       width: 36,
+      //       height: 56,
+      //     };
 
-          // Add user's current location to the first of the locations array
-          locations.push(userLocation);
+      //     // Add user's current location to the first of the locations array
+      //     locations.push(userLocation);
 
-          // Add marker for user's current location
-          addMarkers([userLocation]);
+      //     // Add marker for user's current location
+      //     addMarkers([userLocation]);
 
-          // Adjust the map to fit all markers including user's location
-          map.fitBounds(bounds);
-        });
-      } else {
-        alert("Geolocation is not supported by this browser.");
-      }
+      //     // Adjust the map to fit all markers including user's location
+      //     map.fitBounds(bounds);
+      //   });
+      // } else {
+      //   alert("Geolocation is not supported by this browser.");
+      // }
     }
   </script>
 
