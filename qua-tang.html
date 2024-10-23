@@ -31,6 +31,12 @@
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+    <style>
+		.card-header {
+			cursor: pointer;
+		}
+	</style>
 </head>
 
 <body>
@@ -63,15 +69,17 @@
     <!-- <div class="container-fluid" style="padding-top: 120px;"> -->
         <div class="container">
             <div class="border-start border-5 border-primary ps-3 mb-5">
-                <h6 class="text-primary text-uppercase">Quà</h6>
-                <h5 class="display-7 text-uppercase mb-0 w-100">Các phần quà</h5>
+                <h4 class="text-primary text-uppercase">Quà</h4>
+                <h5 class="display-7 text-uppercase mb-0 w-100">Phần quà cho các cháu</h5>
             </div>
             <div class="row g-3">
                 <div id="accordion">
                     <div class="card">
-                      <div class="card-header" id="headingOne">
+                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
                         <h5 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button class="btn btn-link">
+                            <img src="img/goi-1-icon.svg" style="width: 32px; height: 32px;" class="me-2">
                             Gói 1 - Tất cả học sinh
                           </button>
                         </h5>
@@ -91,10 +99,12 @@
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-header" id="headingTwo">
+                    <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
                         <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            Gói 2 - Dành cho 5 học sinh đặc biệt
+                          <button class="btn btn-link collapsed">
+                            <img src="img/goi-2-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                            Gói 2 - Cho 5 học sinh đặc biệt
                           </button>
                         </h5>
                       </div>
@@ -112,10 +122,11 @@
                     </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree">
+                        <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="true" aria-controls="collapseThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="true" aria-controls="collapseThree">
+                                <button class="btn btn-link collapsed">
+                                    <img src="img/goi-3-icon.svg" style="width: 32px; height: 32px;" class="me-2">
                                     Gói 3 - Dụng cụ thể thao
                                 </button>
                             </h5>

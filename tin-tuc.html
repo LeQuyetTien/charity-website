@@ -32,6 +32,12 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
     media="screen">
+
+    <style>
+      .card-header {
+        cursor: pointer;
+      }
+    </style>
 </head>
 
 <body>
@@ -67,7 +73,7 @@
     <!-- <div class="container-fluid bg-light pt-5"> -->
     <div class="container">
       <div class="border-start border-5 border-primary ps-3 mb-5">
-        <h6 class="text-primary text-uppercase">Tin tức</h6>
+        <h4 class="text-primary text-uppercase">Tin tức</h4>
         <h5 class="display-7 text-uppercase mb-0 w-100">Thông tin mới nhất</h5>
       </div>
       <div class="row g-2">
@@ -75,7 +81,8 @@
         </div>
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
               <div class="d-flex">
                 <div>
                   <h5 class="mb-0">
@@ -84,13 +91,13 @@
                       <div class="d-flex mb-3">
                         <small class="post-day"><i class="bi bi-calendar-date me-2"></i>13/03/2024</small>
                       </div>
-                      <h5 class="text-uppercase mb-3">Mái ấm vòng tay mẹ</h5>
+                      <div class="d-flex g-2">
+                        <img src="img/mai-am-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">Mái ấm vòng tay mẹ</h6>
+                      </div>
                     </button>
                   </h5>
                 </div>
-                <!-- <div class="">
-                  <img src="img/new-icon-gif.gif" style="width: 48px; height: 48px;">
-                </div> -->
               </div>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -108,16 +115,19 @@
         </div>
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
               <div class="d-flex">
                 <div>
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                      aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link collapsed">
                       <div class="d-flex mb-3">
                         <small class="post-day"><i class="bi bi-calendar-date me-2"></i>08/11/2024</small>
                       </div>
-                      <h5 class="text-uppercase mb-3">Cơm Yên Vui</h5>
+                      <div class="d-flex g-2">
+                        <img src="img/tiem-an-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">Cơm Yên Vui</h6>
+                      </div>
                     </button>
                   </h5>
                 </div>
@@ -144,16 +154,19 @@
         </div>
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header" id="headingFour">
+            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour"
+            aria-expanded="false" aria-controls="collapseFour">
               <div class="d-flex">
                 <div>
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                      aria-expanded="false" aria-controls="collapseFour">
+                    <button class="btn btn-link collapsed">
                       <div class="d-flex mb-3">
                         <small class="post-day"><i class="bi bi-calendar-date me-2"></i>07/11/2024</small>
                       </div>
-                      <h5 class="text-uppercase mb-3">Măng Cành</h5>
+                      <div class="d-flex g-2">
+                        <img src="img/school-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">Măng Cành</h6>
+                      </div>
                     </button>
                   </h5>
                 </div>
@@ -177,16 +190,19 @@
         </div>
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header" id="headingFour">
+            <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFive"
+            aria-expanded="false" aria-controls="collapseFive">
               <div class="d-flex">
                 <div>
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                      aria-expanded="false" aria-controls="collapseFive">
+                    <button class="btn btn-link collapsed">
                       <div class="d-flex mb-3">
                         <small class="post-day"><i class="bi bi-calendar-date me-2"></i>07/11/2024</small>
                       </div>
-                      <h5 class="text-uppercase mb-3">Mầm non Vành Khuyên</h5>
+                      <div class="d-flex g-2">
+                        <img src="img/school-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">Mầm non Vành Khuyên</h6>
+                      </div>
                     </button>
                   </h5>
                 </div>
@@ -208,155 +224,28 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-6">
-					<div class="card">
-						<div class="card-header" id="heading1">
-							<div class="d-flex">
-								<div>
-									<h5 class="mb-0">
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="#collapse1">
-											<div class="d-flex mb-3">
-												<small><i class="bi bi-calendar-date me-2"></i>14/09/2020</small>
-											</div>
-											<h5 class="mb-3">Từ tháng 5/2023 hàng tuần vào thứ 4 ...</h5>
-										</button>
-									</h5>
-								</div>
-								<div class="">
-									<img src="img/new-icon-gif.gif" style="width: 48px; height: 48px;">
-								</div>
-							</div>
-						</div>
-						<div id="collapse1" class="collapse" aria-labelledby="heading1"  data-parent="#accordion">
-							<div class="card-body">
-								<div class="service-item bg-light p-4">
-									<p>Từ tháng 5/2023 hàng tuần vào thứ 4 ...</p>
-									<a href="">Xem chi tiết</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
-      </div>
-      <div id="accordion">
-        <!-- <div class="card col-lg-6">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <div class="d-flex mb-3">
-                    <small><i class="bi bi-calendar-date me-2"></i>13/03/2024</small>
-                </div>
-                <h5 class="text-uppercase mb-3">Mái ấm vòng tay mẹ ềwfefsdfqf</h5>
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-                <div class="service-item bg-light p-4">
-                    <p>Nhóm đã thăm và làm việc với BGH trường để trao đổi kế hoạch tặng quà cho 40 HS trường tại xã Sông Cầu, huyện Khánh
-                        Vĩnh.
-                        Hình ảnh buổi làm việc được chia sẻ trong phần 'Hình ảnh'.</p>
-                    <a href="">Xem chi tiết</a>
-                </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="card col-lg-6">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="d-flex mb-3">
-                    <small><i class="bi bi-calendar-date me-2"></i>13/03/2024</small>
-                </div>
-                <h5 class="text-uppercase mb-3">Mái ấm vòng tay mẹ</h5>
-              </button>
-            </h5>
-          </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                <div class="service-item bg-light d-flex p-4">
-                    <p>Nhóm đã thăm và làm việc với BGH trường để trao đổi kế hoạch tặng quà cho 40 HS trường tại xã Sông Cầu, huyện Khánh
-                        Vĩnh.
-                        Hình ảnh buổi làm việc được chia sẻ trong phần 'Hình ảnh'.</p>
-                    <a href="">Xem chi tiết</a>
-                </div>
-            </div>
-        </div>
-        </div> -->
-        <!-- <div class="card col-lg-6">
-            <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        <div class="d-flex mb-3">
-                            <small><i class="bi bi-calendar-date me-2"></i>08/11/2024</small>
-                        </div>
-                        <h5 class="text-uppercase mb-3">Cơm Yên Vui</h5>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="service-item bg-light d-flex p-4">
-                        <p>
-                            Từ tháng 5/2023 hàng tuần vào thứ 4, nhóm hổ trợ quán Yên Vui một thùng gia vị để đóng góp làm thức ăn cho các người
-                            nghèo khó và lao động đường phố trong Tp Nha Trang.
-                        
-                            Xin xem hoạt động của quán ở đây: https://baokhanhhoa.vn/doi-song/202211/gop-chut-yen-vui-cho-doi-8268824/
-                        
-                            Hình ảnh trao quà được chia sẻ trong phần 'Hình ảnh'.
-                        </p>
-                        <a href="">Xem chi tiết</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="card col-lg-6">
-            <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        <div class="d-flex mb-3">
-                            <small><i class="bi bi-calendar-date me-2"></i>07/11/2024</small>
-                        </div>
-                        <h5 class="text-uppercase mb-3">Măng Cành</h5>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    <div class="service-item bg-light d-flex p-4">
-                        <p>
-                            Ngày 23/09 nhóm tặng và gởi 21 HS trường Tiểu học Măng Cành, Kon Tum.
-                        
-                            Phần quà gồm 1 bộ áo quần mặc đi học, 1 ba lô, bút và tập vở.
-                        
-                            Hình ảnh trao quà được chia sẻ trong phần 'Hình ảnh'.
-                        </p>
-                        <a href="">Xem chi tiết</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
       </div>
       <!-- NEWS START -->
 
+      <!-- Đoạn code này đã tính thời gian hiện new -->
       <div class="row g-2">
         <div id="accordion">
         </div>
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header" id="heading1">
+            <div class="card-header" id="heading1" data-toggle="collapse" data-target="#collapse1"
+            aria-expanded="false" aria-controls="#collapse1">
               <div class="d-flex">
                 <div>
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1"
-                      aria-expanded="false" aria-controls="#collapse1">
+                    <button class="btn btn-link collapsed">
                       <div class="d-flex mb-3">
                         <small class="post-day"><i class="bi bi-calendar-date me-2"></i>18/10/2024</small>
                       </div>
-                      <h5 class="text-uppercase mb-3">TH Xuân Sơn</h5>
+                      <div class="d-flex g-2">
+                        <img src="img/school-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">TH Xuân Sơn</h6>
+                      </div>
                     </button>
                   </h5>
                 </div>
@@ -374,49 +263,55 @@
         </div>
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header" id="heading1">
+            <div class="card-header" id="heading2"  data-toggle="collapse" data-target="#collapse2"
+            aria-expanded="false" aria-controls="#collapse2">
               <div class="d-flex">
                 <div>
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse1"
-                      aria-expanded="false" aria-controls="#collapse1">
+                    <button class="btn btn-link collapsed">
                       <div class="d-flex mb-3">
                         <small class="post-day"><i class="bi bi-calendar-date me-2"></i>30/10/2024</small>
                       </div>
-                      <h5 class="text-uppercase mb-3">TH Xuân Sơn</h5>
-                    </button>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
-              <div class="card-body">
-                <div class="service-item bg-light p-4">
-                  <p>Từ tháng 5/2023 hàng tuần vào thứ 4 ...</p>
-                  <a href=""><img src="img/home-icon.svg" style="width: 60px; height: 50px;"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header" id="heading2">
-              <div class="d-flex">
-                <div>
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2"
-                      aria-expanded="false" aria-controls="#collapse2">
-                      <div class="d-flex mb-3">
-                        <small class="post-day"><i class="bi bi-calendar-date me-2"></i>15/09/2021</small>
+                      <div class="d-flex g-2">
+                        <img src="img/school-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">TH Xuân Sơn</h6>
                       </div>
-                      <h5 class="text-uppercase mb-3">TH Ninh Phú</h5>
                     </button>
                   </h5>
                 </div>
               </div>
             </div>
             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+              <div class="card-body">
+                <div class="service-item bg-light p-4">
+                  <p>Từ tháng 5/2023 hàng tuần vào thứ 4 ...</p>
+                  <a href=""><img src="img/home-icon.svg" style="width: 60px; height: 50px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header" id="heading3"  data-toggle="collapse" data-target="#collapse3"
+            aria-expanded="false" aria-controls="#collapse3">
+              <div class="d-flex">
+                <div>
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed">
+                      <div class="d-flex mb-3">
+                        <small class="post-day"><i class="bi bi-calendar-date me-2"></i>15/09/2021</small>
+                      </div>
+                      <div class="d-flex g-2">
+                        <img src="img/school-icon.svg" style="width: 32px; height: 32px;" class="me-2">
+                        <h6 class="text-uppercase pt-2" style="padding-top: 10px;">TH Ninh Phú</h6>
+                      </div>
+                    </button>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
               <div class="card-body">
                 <div class="service-item bg-light p-4">
                   <p>Từ tháng 5/2023 hàng tuần vào thứ 4 ...</p>

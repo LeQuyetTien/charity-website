@@ -37,6 +37,16 @@
 		.card-header {
 			cursor: pointer;
 		}
+		img {
+            float: left; /* Hình ảnh sẽ nổi về bên trái */
+            margin: 0 15px 15px 0; /* Khoảng cách giữa hình và văn bản */
+            max-width: 40%; /* Giới hạn chiều rộng tối đa của hình */
+        }
+
+        .break {
+            clear: both; /* Ngắt dòng văn bản sau hình ảnh */
+        }
+
 	</style>
 </head>
 
@@ -83,6 +93,7 @@
 								aria-expanded="true" aria-controls="collapseOne">
 								<h5 class="mb-0">
 									<button class="btn btn-link">
+										<img src="img/lien-lac-icon.svg" style="width: 32px; height: 32px;" class="me-2">
 										Liên lạc
 									</button>
 								</h5>
@@ -93,7 +104,7 @@
 								<div class="card-body">
 
 									<div class="service-item bg-light d-flex p-4">
-										<div>
+										<!-- <div>
 											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;">
 										</div>
 										<div style="padding-left: 12px; padding-top: 5px">
@@ -109,35 +120,26 @@
 											</p>
 											<a class="text-uppercase font-weight-bold" href="danh-sach (1).xlsx">Mẫu
 												Excel</a>
+										</div> -->
+										<div>
+											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed nisl consectetur, sollicitudin magna vitae, dictum
+												velit. Aenean in eros in elit posuere vulputate nec vitae orci. Pellentesque tempor scelerisque nunc, a ullamcorper
+												risus fringilla quis. Integer condimentum tempus rhoncus. In sollicitudin congue erat ac rhoncus. Donec efficitur
+												scelerisque risus, vitae sagittis arcu vehicula vel. Ut eu turpis sit amet elit porta cursus non ac mi. Integer
+												fermentum dui augue, et molestie libero malesuada nec. </p>
+											<!-- Thêm đoạn văn này để ngắt dòng sau hình ảnh -->
+											<div class="break"></div>
+											<p>Aliquam et nisi ultricies, porttitor tellus a, dapibus ante. Pellentesque habitant morbi tristique senectus et netus
+												et malesuada fames ac turpis egestas. Pellentesque laoreet porttitor tristique. Morbi hendrerit nunc nec vulputate
+												blandit. Ut aliquam urna et ultrices luctus. Morbi nec nunc id lorem blandit finibus. In vulputate accumsan velit at
+												tincidunt.
+											
+												Duis sagittis convallis tellus sit amet sodales. Donec finibus quis augue id condimentum. Aenean molestie bibendum
+												diam vitae iaculis. Fusce eu enim dolor. Cras sagittis ligula eu odio egestas rhoncus. Vestibulum mattis ullamcorper
+												facilisis. Vivamus placerat imperdiet augue vitae vulputate..</p>
 										</div>
 									</div>
-
-									<div class="service-item bg-light d-flex p-4">
-										<!-- <div class="row"> -->
-										<div class="col-lg-7 pt-4 pt-lg-0">
-											<img src="img/dong-phuc-the-thao.jpg" style="width: 100px; height: 100px;"
-												class="float-end imgshadow" alt="">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-												veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-												commodo consequat. Duis aute irure dolor
-												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-												pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-												qui officia deserunt mollit anim id est laborum.
-												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-												pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-												qui officia deserunt mollit anim id est laborum.
-												in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-												pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-												qui officia deserunt mollit anim id est laborum.
-											</p>
-										</div>
-										<div style="text-align: left;" class="col-lg-5">
-										</div>
-									</div>
-
-
 								</div>
 							</div>
 						</div>
@@ -146,6 +148,7 @@
 								aria-expanded="false" aria-controls="collapseTwo">
 								<h5 class="mb-0">
 									<button class="btn btn-link collapsed">
+										<img src="img/chuan-bi-icon.svg" style="width: 32px; height: 32px;" class="me-2">
 										Chuẩn bị
 									</button>
 								</h5>
@@ -173,6 +176,7 @@
 								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 								<h5 class="mb-0">
 									<button class="btn btn-link collapsed">
+										<img src="img/khao-sat-icon.svg" style="width: 32px; height: 32px;" class="me-2">
 										Khảo sát
 									</button>
 								</h5>
@@ -202,6 +206,7 @@
 									data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 									<h5 class="mb-0">
 										<button class="btn btn-link collapsed">
+											<img src="img/trao-qua-icon.svg" style="width: 32px; height: 32px;" class="me-2">
 											Trao quà
 										</button>
 									</h5>
@@ -237,6 +242,7 @@
 									data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
 									<h5 class="mb-0">
 										<button class="btn btn-link collapsed">
+											<img src="img/dieu-chinh-icon.svg" style="width: 32px; height: 32px;" class="me-2">
 											Điều chỉnh
 										</button>
 									</h5>
